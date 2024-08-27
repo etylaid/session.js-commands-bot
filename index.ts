@@ -6,14 +6,14 @@ import { SessionValidationError, SessionValidationErrorCode, SessionJsError } fr
 // Import configuration
 import * as config from './config.json'
 
-await ready // wait for session.js
+await ready
 const session = new Session()
 
 //console.log("Bot account mnemonic:",encode(generateSeedHex())) // generate mnemonic (create account)
 
 // Mnemonic validation
 try {
-    session.setMnemonic(config.Mnemonic) // Will throw SessionValidationError if the provided mnemonic is invalid
+    session.setMnemonic(config.Mnemonic, config.DisplayName) // Will throw SessionValidationError if the provided mnemonic is invalid
   } catch(e) {
     if(e instanceof SessionValidationError) {
       if(e.code === SessionValidationErrorCode.InvalidMnemonic) { // "e" contains code property with one of SessionValidationErrorCode enums
@@ -40,7 +40,7 @@ console.log('Bot\'s Session ID:', session.getSessionID())
 session.addPoller(new Poller())
 
 
-// Bot startup timestamp, called in line X
+// Bot startup timestamp
 const botStartupTimestamp = Date.now();
 
 
@@ -64,7 +64,35 @@ session.on('message', async message => {
         case config.Prefix + "help": // Basic help command
             session.sendMessage({
                 to: message.from,
-                text: "help command called",
+                text: `
+                List of available commands\n
+                
+${config.Prefix}help        - Shows this message\n
+${config.Prefix}id          - Shows the bot's Session ID\n
+${config.Prefix}ping        - Shows the bot's latency\n
+${config.Prefix}mnemonic    - Shows the bot's mnemonic\n
+                `,
+            })
+            break;
+
+        case config.Prefix + "id": // Basic help command
+            session.sendMessage({
+                to: message.from,
+                text: session.getSessionID(),
+            })
+            break;
+
+        case config.Prefix + "latency": // Basic help command
+            session.sendMessage({
+                to: message.from,
+                text: `Pong! (${Date.now() - message.timestamp}ms)`,
+            })
+            break;
+
+        case config.Prefix + "mnemonic": // Basic help command
+            session.sendMessage({
+                to: message.from,
+                text: `:clown:`,
             })
             break;
 
