@@ -1,9 +1,9 @@
 <div align="center">
   <h1>Session.js Commands Bot</h1>
-  <p>Simple [Session](https://getsession.org) bot focused on commands.</p>
+  <p>Simple <a href="https://getsession.org">Session</a> bot focused on commands.</p>
   <hr>
 
   <br>
-  <sub>Powered by [Session.js](https://github.com/sessionjs) - code by [@etylaid](https://github.com/etylaid)</sub><br>
+  <sub>Powered by <a href="https://github.com/sessionjs">Session.js</a> - code by <a href="https://github.com/etylaid">@etylaid</a></sub><br>
   <sub>Sorry in advance for bad code, this is my first open source project 😅</sub><br>
 </div>
