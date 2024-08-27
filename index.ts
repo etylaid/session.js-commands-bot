@@ -7,9 +7,12 @@ import { SessionValidationError, SessionValidationErrorCode, SessionJsError } fr
 import * as config from './config.json'
 
 await ready
-const session = new Session()
+const session = new Session();
 
-//console.log("Bot account mnemonic:",encode(generateSeedHex())) // generate mnemonic (create account)
+(() => {
+  console.log("Bot account mnemonic:\n",encode(generateSeedHex()),"\n\nPlace this inside the config.json file under \"Mnemonic\".\nAfter doing that, comment out this function (line 12 to 17) and the bot will start.");
+  process.exit(0)
+})();
 
 // Mnemonic validation
 try {
