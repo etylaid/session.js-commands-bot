@@ -78,21 +78,21 @@ ${config.Prefix}mnemonic    - Shows the bot's mnemonic\n
             })
             break;
 
-        case config.Prefix + "id": // Basic help command
+        case config.Prefix + "id":
             session.sendMessage({
                 to: message.from,
                 text: session.getSessionID(),
             })
             break;
 
-        case config.Prefix + "latency": // Basic help command
+        case config.Prefix + "latency":
             session.sendMessage({
                 to: message.from,
                 text: `Pong! (${Date.now() - message.timestamp}ms)`,
             })
             break;
 
-        case config.Prefix + "mnemonic": // Basic help command
+        case config.Prefix + "mnemonic":
             session.sendMessage({
                 to: message.from,
                 text: `:clown:`,
