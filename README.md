@@ -1,5 +1,5 @@
 # Session.js Commands Bot
-#### _Simple Session.js bot template
+#### _Simple Session.js bot template_
 #### **Powered by [Session.js](https://github.com/sessionjs)**
 ___
 This bot offers a very basic method of handling commands ready for use.
