@@ -17,7 +17,7 @@ try {
   } catch(e) {
     if(e instanceof SessionValidationError) {
       if(e.code === SessionValidationErrorCode.InvalidMnemonic) { // "e" contains code property with one of SessionValidationErrorCode enums
-        console.error('You entered invalid mnemonic!')
+        console.error('You entered an invalid mnemonic!')
       } else {
         console.error(e.code) // Other error codes related to Session.js
       }
