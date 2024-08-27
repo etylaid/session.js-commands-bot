@@ -10,7 +10,7 @@ await ready
 const session = new Session();
 
 (() => {
-  console.log("Bot account mnemonic:\n",encode(generateSeedHex()),"\n\nPlace this inside the config.json file under \"Mnemonic\".\nAfter doing that, comment out this function (line 12 to 17) and the bot will start.");
+  console.log("Bot account mnemonic:\n",encode(generateSeedHex()),"\n\nPlace this inside the config.json file under \"Mnemonic\".\nAfter doing that, comment out this function (line 12 to 15) and the bot will start.");
   process.exit(0)
 })();
 
