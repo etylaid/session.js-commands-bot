@@ -5,5 +5,5 @@
 
   <br>
   <sub>Powered by <a href="https://github.com/sessionjs">Session.js</a> - code by <a href="https://github.com/etylaid">@etylaid</a></sub><br>
-  <sub>Sorry in advance for bad code, this is my first open source project 😅</sub><br>
+  <sub>Sorry in advance for bad code, I'm still learning to write clean code 😅</sub><br>
 </div>
