@@ -15,7 +15,6 @@
         "@session.js/client": "^0.0.36",
         "@session.js/keypair": "^1.0.2",
         "@session.js/mnemonic": "^1.0.4",
-        "@types/node": "^22.5.0",
-        "dotenv": "^16.4.5"
+        "@types/node": "^22.5.0"
     }
 }
