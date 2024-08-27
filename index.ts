@@ -85,7 +85,7 @@ ${config.Prefix}mnemonic    - Shows the bot's mnemonic\n
             })
             break;
 
-        case config.Prefix + "latency":
+        case config.Prefix + "ping":
             session.sendMessage({
                 to: message.from,
                 text: `Pong! (${Date.now() - message.timestamp}ms)`,
