@@ -1,6 +1,6 @@
 # Session.js Commands Bot
 #### _Simple Session.js bot template
-#### **Powered by [Session.js](sessjs)**
+#### **Powered by [Session.js](https://github.com/sessionjs)**
 ___
 This bot offers a very basic method of handling commands ready for use.
 - [x] Blocks past messages from being parsed on startup
@@ -11,7 +11,7 @@ This bot offers a very basic method of handling commands ready for use.
 
 ## Setting up
 Follow these steps to get the bot up and running correctly:
-1. Install [Bun](bun) if not already installed.
+1. Install [Bun](https://bun.sh) if not already installed.
 2. Download the repository.
 3. Run `bun install`.
 4. Rename `example.config.json` to `config.json` and update the values.
@@ -32,9 +32,3 @@ I know, this is not the best solution, but at least it works...
 ## License
 
 Apache 2.0
-
-**Free Software, Hell Yeah!**
-
-[//]: 
-   [sessjs]: <https://github.com/sessionjs>
-   [bun]: <https://bun.sh>
